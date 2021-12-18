@@ -1,0 +1,22 @@
+{
+  "name": "chall11-note-taker",
+  "version": "1.0.0",
+  "description": "A note taking app designed to allow users to save, add, and delete notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericc97/chall11-note-taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericc97/chall11-note-taker/issues"
+  },
+  "homepage": "https://github.com/ericc97/chall11-note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
