@@ -4,7 +4,7 @@
   "description": "A note taking app designed to allow users to save, add, and delete notes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js"
   },
   "repository": {
@@ -19,6 +19,10 @@
   "homepage": "https://github.com/ericc97/chall11-note-taker#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
   }
 }
