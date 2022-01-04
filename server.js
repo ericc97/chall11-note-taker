@@ -5,7 +5,7 @@ const morgan = require('morgan');
 
 const path = require('path');
 const app = express()
-const port = 3000
+
 const { v4: uuidv4 } = require('uuid');
 const { resourceLimits } = require('worker_threads');
 app.use(morgan('dev'));
@@ -55,9 +55,10 @@ app.get('*', (req,res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
 
 // request -> middleware function -> response
 
