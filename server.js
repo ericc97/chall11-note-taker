@@ -7,6 +7,7 @@ const path = require('path');
 const app = express()
 
 const { v4: uuidv4 } = require('uuid');
+const port = process.env.PORT || 5000;
 const { resourceLimits } = require('worker_threads');
 app.use(morgan('dev'));
 //require middleware
@@ -55,10 +56,9 @@ app.get('*', (req,res) => {
 
 
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
-
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 
 // request -> middleware function -> response
 
