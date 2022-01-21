@@ -1,6 +1,5 @@
 const express = require('express')
 const fs = require('fs');
-const morgan = require('morgan');
 
 
 const path = require('path');
@@ -9,7 +8,6 @@ const app = express()
 const { v4: uuidv4 } = require('uuid');
 const port = process.env.PORT || 5000;
 const { resourceLimits } = require('worker_threads');
-app.use(morgan('dev'));
 //require middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
