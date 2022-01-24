@@ -9,11 +9,8 @@ The purpose of the application is to allow users an easy way to save and store n
 * Heroku
 * Node
 
-## Github repo
-https://github.com/ericc97/chal-12-ericc
-
-## Screencastify Link 
-https://watch.screencastify.com/v/bMJwBcf6k6kvtLToemOL
+## Github repo 
+https://github.com/ericc97/chall11-note-taker-ericc
 
 ## Author
 Eric Coleman
