@@ -8,6 +8,7 @@ The purpose of the application is to allow users an easy way to save and store n
 ## Built With
 * Heroku
 * Node
+* Express
 
 ## Github repo 
 https://github.com/ericc97/chall11-note-taker-ericc
